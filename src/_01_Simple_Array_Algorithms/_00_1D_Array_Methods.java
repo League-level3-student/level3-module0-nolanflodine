@@ -14,14 +14,13 @@ public class _00_1D_Array_Methods {
 	// 2. Complete the method so that it returns the average of all
 	// of the integers in the array being passed in
 	public static double averageIntArray(int[] values) {
-		double average = 0;
-		int add = 0;
-		int size = values.length;
+		float add = 0;
 		for (int i = 0; i < values.length; i++) {
 			add = add + values[i];
+			System.out.println(add);
+			System.out.println(values.length);
 		}
-		average = add / size;
-		return average;
+		return add/values.length;
 	}
 
 	// 3. Complete the method so that it returns true if the integer
@@ -47,6 +46,7 @@ public class _00_1D_Array_Methods {
 			if (arr[i] == value) {
 				flag2 = true;
 				instance = i;
+				break;
 			}
 		}
 		if (flag2) {
